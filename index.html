@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <audio id="audio" controls><source id="sourc" src="" type="audio/mpeg"></audio>
+      <div class="top">
+        <button id="back"><i class="fas fa-chevron-left"></i></button>
+        <span>Playing Now</span>
+        <button id="musicList"><i class="fas fa-list-ul"></i></button>
+      </div>
+
+
+      <div class="banner">
+        <div class="image"></div>
+      </div>
+
+
+      <div class="song-artist">
+        <span id="song"></span>
+        <span id="artist"></span>
+      </div>
+
+
+      <div class="time-stick">
+        <div class="stick">
+          <div class="track"><div class="circle"></div></div>
+        </div>
+
+        <div class="time">
+          <span id="currentTime"></span>
+          <span id="songLength"></span>
+        </div>
+      </div>
+
+
+
+      <div class="buttons">
+        <div class="altBtn"><label id="shuffle"><i class="fas fa-random"></i></label></div>
+        <div class="altBtn"><label id="prev"><i class="fas fa-step-backward"></i></label></div>
+        <div class="altBtn"><label id="play-pause"><i class="fas fa-play"></i></label></div>
+        <div class="altBtn"><label id="next"><i class="fas fa-step-forward"></i></label></div>
+        <div class="altBtn">
+          <div class="st1">
+            <input type="range" min="0" max="100" value="100" id="volRange">
+          </div>
+          <label id="volume" for="vlm"><i class="fas fa-volume-up"></i></label>
+        </div>
+      </div>
+
+
+      <div class="bottom"></div>
+
+
+      <div class="list">
+        <div class="list-head">
+          <span><img src="player.png" width="25px" height="24px">  <span>Playlist</span></span>
+          <span id="xx">✕</span>
+        </div>
+        <ul id="playlist"></ul>
+      </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
